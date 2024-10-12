@@ -1,0 +1,75 @@
+/* src/styles/PurchaseOrder.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.text-gray-500 {
+    color: #a0aec0; /* Tailwind gray-500 color */
+}
+
+.item {
+    border: 1px solid #e5e5e5;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.modal-header {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Styles for the print window */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
