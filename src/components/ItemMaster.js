@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Modal from "./Modal"; 
+import Modal from "./Modal";
 import "../styles/ItemMaster.css";
 
 const ItemMaster = () => {
@@ -20,13 +20,13 @@ const ItemMaster = () => {
     { id: 1, name: "Supplier A" },
     { id: 2, name: "Supplier B" },
     { id: 3, name: "Supplier C" },
-  ]; 
+  ];
 
-  const stockUnits = ["pcs", "kg", "liters"]; 
+  const stockUnits = ["pcs", "kg", "liters"];
 
   const handleAddItem = () => {
     const newItem = {
-      itemNo: items.length + 1, 
+      itemNo: items.length + 1,
       itemName,
       inventoryLocation,
       brand,
@@ -168,7 +168,9 @@ const ItemMaster = () => {
             onChange={(e) => setStockUnit(e.target.value)}
             className="border rounded w-full p-2"
           >
-            <option value="" disabled>Select Stock Unit</option>
+            <option value="" disabled>
+              Select Stock Unit
+            </option>
             {stockUnits.map((unit) => (
               <option key={unit} value={unit}>
                 {unit}
@@ -214,10 +216,18 @@ const ItemMaster = () => {
       </Modal>
 
       {/* Supplier Selection Modal */}
-      <Modal isOpen={isSupplierModalOpen} onClose={() => setIsSupplierModalOpen(false)} title="Select Supplier">
+      <Modal
+        isOpen={isSupplierModalOpen}
+        onClose={() => setIsSupplierModalOpen(false)}
+        title="Select Supplier"
+      >
         <ul className="space-y-2">
           {suppliers.map((sup) => (
-            <li key={sup.id} className="cursor-pointer hover:bg-gray-200 p-2 rounded" onClick={() => selectSupplier(sup.name)}>
+            <li
+              key={sup.id}
+              className="cursor-pointer hover:bg-gray-200 p-2 rounded"
+              onClick={() => selectSupplier(sup.name)}
+            >
               {sup.name}
             </li>
           ))}
